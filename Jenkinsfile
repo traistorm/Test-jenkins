@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        bat 'pwsh --version'
+        bat 'echo Test'
       }
     }
     stage('hello') {
       steps {
-        bat 'pwsh hello.ps1'
+        bat 'echo Hello'
       }
     }
   }
